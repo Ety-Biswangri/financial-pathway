@@ -2,11 +2,15 @@ import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 
 const Checkout = () => {
+    const handleForm = (event) => {
+        event.preventDefault();
+    }
+
     return (
-        <div>
+        <div className='mb-5'>
             <h1 className='text-center mt-5 mb-4'>Checkout</h1>
-            <Container>
-                <Form className='w-50 mx-auto'>
+            <Container className='mb-5'>
+                <Form className='w-50 mx-auto' onSubmit={handleForm}>
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Label>Your Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter name" />
