@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -29,9 +29,11 @@ const Register = () => {
         setPassword(event.target.value);
     }
 
-    if (user) {
-        navigate('/home');
-    }
+    useEffect(() => {
+        if (user) {
+            navigate('/home');
+        }
+    }, [user]);
 
     const handleRegister = (event) => {
         event.preventDefault();
