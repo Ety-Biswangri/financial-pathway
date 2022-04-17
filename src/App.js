@@ -10,6 +10,7 @@ import Services from './components/Home/Services/Services';
 import Header from './components/Shared/Header/Header';
 import Footer from './components/Shared/Footer/Footer';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <Footer></Footer>

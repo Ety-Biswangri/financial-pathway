@@ -10,7 +10,7 @@ const BannerPage = () => {
             <Carousel>
                 <Carousel.Item className='image-bg'>
                     <img
-                        className="d-block w-100 img-fluid"
+                        className="d-block w-100 fluid"
                         src={financial1}
                         alt="First slide"
                     />

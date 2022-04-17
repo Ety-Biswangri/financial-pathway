@@ -1,20 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Dona Santos",
-        "price": 5870,
+        "name": "Personal Financial Coaching",
+        "price": 5800,
+        "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/personal-finance.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     },
     {
         "id": 2,
-        "name": "Rosa Bridges",
-        "price": 3888,
+        "name": "Organizational Financial Coaching",
+        "price": 8800,
+        "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/organization-finance.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     },
     {
         "id": 3,
-        "name": "Winters Sosa",
-        "price": 7453,
+        "name": "Stay-On-Track Session",
+        "price": 7500,
+        "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/stay-track.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     }
 ]
