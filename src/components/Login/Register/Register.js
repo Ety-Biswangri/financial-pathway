@@ -5,6 +5,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import "./Register.css";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -29,11 +30,13 @@ const Register = () => {
         setPassword(event.target.value);
     }
 
-    useEffect(() => {
-        if (user) {
-            navigate('/home');
-        }
-    }, [user]);
+    if (loading) {
+        return <Loading></Loading>;
+    }
+
+    if (user) {
+        navigate('/home');
+    }
 
     const handleRegister = (event) => {
         event.preventDefault();
