@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import "./Login.css";
 import { MdError } from 'react-icons/md';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -19,6 +21,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(auth);
 
     let from = location.state?.from?.pathname || "/";
 
@@ -48,6 +51,16 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    const handleResetPassword = async () => {
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Email is sent');
+        }
+        else {
+            toast('Please provide your email address');
+        }
+    }
+
     return (
         <div className='w-50 mx-auto my-5'>
             <Container>
@@ -72,8 +85,11 @@ const Login = () => {
 
                 <p className='mt-3 text-center'>Don't have an account? <Link to="/register" className='text-decoration-none'> Create an account!</Link></p>
 
+                <p className='mt-3 text-center'>Forget Password? <button onClick={handleResetPassword} className='btn btn-link text-decoration-none'> Reset Password</button></p>
+
                 <div>
                     <SocialLogin></SocialLogin>
+                    <ToastContainer></ToastContainer>
                 </div>
             </Container>
         </div>
