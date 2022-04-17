@@ -5,10 +5,16 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
+import { MdError } from 'react-icons/md';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
+
+    let errorMessage;
+    if (error) {
+        errorMessage = <p className='text-danger text-center'><MdError></MdError> {error?.message}</p>
+    }
 
     if (loading) {
         return <Loading></Loading>
@@ -29,6 +35,7 @@ const SocialLogin = () => {
                 <p className='mt-2 px-2'>or</p>
                 <div style={{ height: "1px" }} className='bg-primary w-50'></div>
             </div>
+            {errorMessage}
 
             <div>
                 <button onClick={handleGoogleSignIn}

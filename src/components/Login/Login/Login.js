@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import "./Login.css";
+import { MdError } from 'react-icons/md';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -27,6 +28,11 @@ const Login = () => {
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
+    }
+
+    let errorMessage;
+    if (error) {
+        errorMessage = <p className='text-danger text-center'><MdError></MdError> {error?.message}</p>
     }
 
     if (loading) {
@@ -62,6 +68,7 @@ const Login = () => {
                         Login
                     </Button>
                 </Form>
+                {errorMessage}
 
                 <p className='mt-3 text-center'>Don't have an account? <Link to="/register" className='text-decoration-none'> Create an account!</Link></p>
 
