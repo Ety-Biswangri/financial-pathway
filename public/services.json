@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Dona Santos",
+        "price": 5870,
+        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+    },
+    {
+        "id": 2,
+        "name": "Rosa Bridges",
+        "price": 3888,
+        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+    },
+    {
+        "id": 3,
+        "name": "Winters Sosa",
+        "price": 7453,
+        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+    }
+]
