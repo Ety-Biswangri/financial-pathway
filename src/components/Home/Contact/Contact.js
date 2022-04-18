@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div id='talk'>
             <Container>
-                <div style={{ marginTop: "4rem" }}>
+                <div>
                     <h1 className='text-center mb-4'>Talk to Me</h1>
                     <div className='w-50 mx-auto'>
                         <Form.Group className="mb-3" controlId="formBasicName">

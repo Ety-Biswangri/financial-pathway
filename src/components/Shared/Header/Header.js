@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/home" style={{ color: "black", fontWeight: "500" }}> Home </Nav.Link>
 
-                            {/* <Nav.Link href="/home#services" style={{ color: "black", fontWeight: "500" }}> Services </Nav.Link>*/}
+                            <Nav.Link as={Link} to="/services" style={{ color: "black", fontWeight: "500" }}> Services </Nav.Link>
 
                             <Nav.Link as={Link} to="/blogs" style={{ color: "black", fontWeight: "500" }}>Blogs</Nav.Link>
 

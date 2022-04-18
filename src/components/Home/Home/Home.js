@@ -8,10 +8,10 @@ const Home = () => {
     return (
         <div>
             <BannerPage></BannerPage>
-            <div className='my-5' id='services'>
+            <div className='my-2' id='services'>
                 <Services></Services>
             </div>
-            <div className='my-5'>
+            <div className='mb-5'>
                 <Contact></Contact>
             </div>
         </div>

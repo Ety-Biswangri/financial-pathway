@@ -14,7 +14,7 @@ const Service = ({ service }) => {
     }
 
     return (
-        <div className='mb-lg-1 mb-4'>
+        <div className=' mb-5'>
             <Col style={{ height: "550px" }}>
                 <CardGroup className='h-100'>
                     <Card>
