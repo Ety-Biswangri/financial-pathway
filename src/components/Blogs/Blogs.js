@@ -6,14 +6,24 @@ const Blogs = () => {
     return (
         <div style={{ minHeight: "75vh", marginBottom: "50px" }}>
             {<Container>
-                <h1 className='mt-3 text-center'>Blogs</h1>
+                <h1 className='mt-3 text-center'>Core Concepts of Authentication</h1>
                 <div>
                     <Card className='my-4'>
                         <Card.Body>
                             <Card.Title>Difference between authorization and authentication.</Card.Title>
                             <Card.Text className='mt-4' style={{ textAlign: "justify" }}>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                <p>The differences between authorization and authenticatiion are given below:</p>
+                                <ul>
+                                    <li className='mb-2'>The process of verifying a user's identity is known as authentication. On the other hand, the process of checking or validating what they have access to is known as authorization.</li>
+                                    <li className='mb-2'>
+                                        Authentication decides whether or not someone is a user. On the contrary, Authorization decides whether or not the user have the permission.
+                                    </li>
+                                    <li>
+                                        Example of Authentication: A user can login to a website using her/his email and password.
+                                        <br />
+                                        Example of Authorization: Providing individual users with administrative access to an applicatiion.
+                                    </li>
+                                </ul>
                             </Card.Text>
                         </Card.Body>
                     </Card>
