@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Personal Financial Coaching",
-        "price": 5800,
+        "price": 5500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/personal-finance.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     },
     {
         "id": 2,
         "name": "Business Financial Coaching",
-        "price": 8800,
+        "price": 7500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/organization-finance.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     },
     {
         "id": 3,
         "name": "Stay-On-Track Session",
-        "price": 7500,
+        "price": 8500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/stay-track.jpg",
         "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
     }

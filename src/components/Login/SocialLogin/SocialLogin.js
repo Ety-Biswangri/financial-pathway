@@ -3,13 +3,15 @@ import { FcGoogle } from 'react-icons/fc';
 import { BsFacebook } from 'react-icons/bs';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import { MdError } from 'react-icons/md';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     let errorMessage;
     if (error) {
@@ -21,7 +23,7 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     const handleGoogleSignIn = () => {
@@ -46,7 +48,7 @@ const SocialLogin = () => {
 
                 <button
                     className='btn w-50 d-flex justify-content-center align-items-center mx-auto my-2' style={{ backgroundColor: "#dab6fc", color: "black", fontWeight: "600", border: "none" }}>
-                    <BsFacebook className='fs-3'></BsFacebook>
+                    <BsFacebook className='fs-4 text-primary'></BsFacebook>
                     <span className='px-2'>Facebook Sign In</span>
                 </button>
             </div>
