@@ -14,17 +14,17 @@ const Service = ({ service }) => {
     }
 
     return (
-        <div>
-            <Col>
-                <CardGroup>
+        <div className='mb-lg-1 mb-4'>
+            <Col style={{ height: "550px" }}>
+                <CardGroup className='h-100'>
                     <Card>
                         <Card.Img variant="top" src={img} className="image-style fluid" />
                         <Card.Body>
-                            <Card.Title>{name}</Card.Title>
-                            <Card.Text>
+                            <Card.Title style={{ fontSize: "22px", fontWeight: "650" }}>{name}</Card.Title>
+                            <Card.Text style={{ fontSize: "20px", fontWeight: "500" }}>
                                 ${price}
                             </Card.Text>
-                            <Card.Text>
+                            <Card.Text style={{ textAlign: "justify", fontSize: "17px" }}>
                                 {description}
                             </Card.Text>
                         </Card.Body>

@@ -4,20 +4,20 @@
         "name": "Personal Financial Coaching",
         "price": 5500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/personal-finance.jpg",
-        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+        "description": "Personal Financial Coaching is one-on-one coaching session that can help you to identify your personal financial goals, eliminate debt, create a working budget, deal with collectors."
     },
     {
         "id": 2,
         "name": "Business Financial Coaching",
         "price": 7500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/organization-finance.jpg",
-        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+        "description": "Business Financial Coaching can help you learn to take control of your business finances and also help your employees become better with money and more financially empowered."
     },
     {
         "id": 3,
-        "name": "Stay-On-Track Session",
+        "name": "Stay-On-Track",
         "price": 8500,
         "img": "https://raw.githubusercontent.com/Ety-Biswangri/images/main/stay-track.jpg",
-        "description": "Nulla adipisicing fugiat enim duis mollit ut dolore. Nostrud ex officia commodo do in et tempor dolor fugiat dolore duis."
+        "description": "Stay-On-Track is a specialized course which can help you to map out a plan of action, develop new habits and break old ones and set you on the path to build confidence with your finance."
     }
 ]

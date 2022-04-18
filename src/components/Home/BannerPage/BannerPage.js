@@ -16,7 +16,7 @@ const BannerPage = () => {
                     />
                     <Carousel.Caption className='margin-bottom'>
                         <h3>MAKE A DIFFERENCE IN YOUR LIFE</h3>
-                        <p>I help business owners and entrepreneurs to maximize their profits and build confidence with their finances.</p>
+                        <p> I help business owners and entrepreneurs to improve their relationship with money and stay on track to meet their financial goals.</p>
                         <button style={{ color: "black", fontWeight: "700", border: "none" }}>Make an Appointment</button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -29,7 +29,7 @@ const BannerPage = () => {
                     />
                     <Carousel.Caption className='margin-bottom'>
                         <h3>MAKE YOUR PASSION COME TRUE </h3>
-                        <p> I help others just like you to learn to take control of your business and personal finances so that you can live the life you have been dreaming about. </p>
+                        <p> I help others just like you to identify the problem areas or challenges in your finances and develop strategies to overcome them. </p>
                         <button style={{ color: "black", fontWeight: "700", border: "none" }}>
                             Make an Appointment
                         </button>
