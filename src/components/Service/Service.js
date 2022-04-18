@@ -16,7 +16,7 @@ const Service = ({ service }) => {
     return (
         <div className=' mb-5'>
             {/* Single Service */}
-            <Col style={{ height: "550px" }}>
+            <Col style={{ height: "550px", boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px" }}>
                 <CardGroup className='h-100'>
                     <Card>
                         <Card.Img variant="top" src={img} className="image-style fluid" />
@@ -33,7 +33,7 @@ const Service = ({ service }) => {
                     </Card>
                 </CardGroup>
             </Col>
-        </div>
+        </div >
     );
 };
 

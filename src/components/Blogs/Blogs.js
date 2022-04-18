@@ -6,9 +6,9 @@ const Blogs = () => {
     return (
         <div style={{ minHeight: "75vh", marginBottom: "50px" }}>
             {<Container>
-                <h1 className='mt-3 text-center fs-1 fw-bolder' style={{ color: "#b5179e" }}>Core Concepts of Authentication</h1>
+                <h1 className='mt-3 text-center fs-1' style={{ color: "#b5179e" }}>Core Concepts of Authentication</h1>
                 <div>
-                    <Card className='my-4'>
+                    <Card className='my-4' style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
                         <Card.Body>
                             <Card.Title>Difference between authorization and authentication.</Card.Title>
                             <Card.Text className='mt-4' style={{ textAlign: "justify" }}>
@@ -28,7 +28,7 @@ const Blogs = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card className='my-4'>
+                    <Card className='my-4' style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
                         <Card.Body>
                             <Card.Title>Why are you using firebase? What other options do you have to implement authentication?</Card.Title>
                             <Card.Text className='mt-4' style={{ textAlign: "justify" }}>
@@ -52,7 +52,7 @@ const Blogs = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card className='my-4'>
+                    <Card className='my-4' style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
                         <Card.Body>
                             <Card.Title>What other services does firebase provide other than authentication?</Card.Title>
                             <Card.Text className='mt-4' style={{ textAlign: "justify" }}>
@@ -76,7 +76,7 @@ const Blogs = () => {
 
                 </div>
             </Container>}
-        </div>
+        </div >
     );
 };
 

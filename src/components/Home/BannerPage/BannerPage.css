@@ -126,10 +126,12 @@
 
     .margin-bottom p {
         font-size: 0.6rem;
+        margin: 0px;
     }
 
     .margin-bottom button {
         font-size: 0.4rem;
+        padding: 0.4rem 1.3rem;
     }
 }
 
@@ -144,10 +146,12 @@
 
     .margin-bottom p {
         font-size: 0.4rem;
+        margin: 0px;
     }
 
     .margin-bottom button {
         background-color: #dab6fc;
         font-size: 0.4rem;
+        padding: 0.3rem 1rem;
     }
 }

@@ -7,7 +7,7 @@ const Contact = () => {
             {/* Talk to Me section */}
             <Container>
                 <div>
-                    <h1 className='text-center mb-4 fs-1 fw-bolder' style={{ color: "#b5179e" }}>Talk to Me</h1>
+                    <h1 className='text-center mb-4 fs-1' style={{ color: "#b5179e" }}>Talk to Me</h1>
                     <div className='w-50 mx-auto'>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Name</Form.Label>
