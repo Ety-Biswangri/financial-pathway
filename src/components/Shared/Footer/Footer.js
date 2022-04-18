@@ -10,9 +10,9 @@ const Footer = () => {
                 <h6>Financial Pathway || All rights reserved &copy; {new Date().getFullYear()}</h6>
                 <span>Visit me on social networks</span>
                 <br />
-                <span className='me-2'> <BsFacebook></BsFacebook></span>
-                <span className='me-2'> <BsTwitter></BsTwitter></span>
-                <span> <FaInstagramSquare></FaInstagramSquare></span>
+                <span className='me-2 fw-bolder'> <BsFacebook></BsFacebook></span>
+                <span className='me-2 fw-bolder'> <BsTwitter></BsTwitter></span>
+                <span className='fw-bolder'> <FaInstagramSquare></FaInstagramSquare></span>
             </div >
         </div >
     );

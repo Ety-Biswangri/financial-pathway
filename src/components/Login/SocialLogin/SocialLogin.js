@@ -32,10 +32,10 @@ const SocialLogin = () => {
 
     return (
         <div>
-            <div className='d-flex align-items-center'>
-                <div style={{ height: "1px" }} className='bg-primary w-50'></div>
+            <div className='d-flex align-items-center justify-content-center'>
+                <div style={{ height: "1px", backgroundColor: "#cbb2fe" }} className='w-25'></div>
                 <p className='mt-2 px-2'>or</p>
-                <div style={{ height: "1px" }} className='bg-primary w-50'></div>
+                <div style={{ height: "1px", backgroundColor: "#cbb2fe" }} className='w-25'></div>
             </div>
             {errorMessage}
 

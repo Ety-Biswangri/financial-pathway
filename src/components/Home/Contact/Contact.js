@@ -6,7 +6,7 @@ const Contact = () => {
         <div id='talk'>
             <Container>
                 <div>
-                    <h1 className='text-center mb-4'>Talk to Me</h1>
+                    <h1 className='text-center mb-4' style={{ color: "#6f2dbd" }}>Talk to Me</h1>
                     <div className='w-50 mx-auto'>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Name</Form.Label>

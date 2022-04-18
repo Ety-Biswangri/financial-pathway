@@ -12,7 +12,6 @@ import Footer from './components/Shared/Footer/Footer';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Checkout from './components/Checkout/Checkout';
 import RequireAuth from './components/Login/RequireAuth/RequireAuth';
-import Contact from './components/Home/Contact/Contact';
 
 function App() {
   return (
