@@ -8,6 +8,7 @@ const BannerPage = () => {
     return (
         <div className='banner-container'>
             <Carousel>
+                {/* slide 1 */}
                 <Carousel.Item className='image-bg'>
                     <img
                         className="d-block w-100 fluid"
@@ -22,6 +23,7 @@ const BannerPage = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
 
+                {/* slide 2 */}
                 <Carousel.Item className='image-bg'>
                     <img
                         className="d-block w-100 img-fluid"

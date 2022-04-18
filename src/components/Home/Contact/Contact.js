@@ -4,6 +4,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 const Contact = () => {
     return (
         <div id='talk'>
+            {/* Talk to Me section */}
             <Container>
                 <div>
                     <h1 className='text-center mb-4' style={{ color: "#6f2dbd" }}>Talk to Me</h1>

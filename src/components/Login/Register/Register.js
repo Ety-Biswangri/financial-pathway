@@ -6,6 +6,7 @@ import "./Register.css";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import { MdError } from 'react-icons/md';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -28,6 +29,11 @@ const Register = () => {
 
     const handleConfirmPasswordChange = (event) => {
         setPassword(event.target.value);
+    }
+
+    let errorMessage;
+    if (error) {
+        errorMessage = <p className='text-danger text-center'><MdError></MdError> {error?.message}</p>
     }
 
     if (loading) {
@@ -67,8 +73,11 @@ const Register = () => {
                         Register
                     </Button>
                 </Form>
+                {errorMessage}
+
                 <p className='mt-3 text-center'>Already have an account? <Link to="/login" className='text-decoration-none'>Login!</Link></p>
                 <div>
+                    {/* google sign in method implementation */}
                     <SocialLogin></SocialLogin>
                 </div>
             </Container>

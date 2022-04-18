@@ -25,11 +25,14 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+
+        {/* protected route Checkout */}
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+
         <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <Footer></Footer>

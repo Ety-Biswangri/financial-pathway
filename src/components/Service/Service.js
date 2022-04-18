@@ -15,6 +15,7 @@ const Service = ({ service }) => {
 
     return (
         <div className=' mb-5'>
+            {/* Single Service */}
             <Col style={{ height: "550px" }}>
                 <CardGroup className='h-100'>
                     <Card>

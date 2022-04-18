@@ -33,6 +33,7 @@ const Login = () => {
         setPassword(event.target.value);
     }
 
+    // error handling
     let errorMessage;
     if (error) {
         errorMessage = <p className='text-danger text-center'><MdError></MdError> {error?.message}</p>
@@ -88,7 +89,10 @@ const Login = () => {
                 <p className='mt-3 text-center'>Forget Password? <button onClick={handleResetPassword} className='btn btn-link text-decoration-none'> Reset Password</button></p>
 
                 <div>
+                    {/* google sign in method implementation */}
                     <SocialLogin></SocialLogin>
+
+                    {/* reset password notification */}
                     <ToastContainer></ToastContainer>
                 </div>
             </Container>
