@@ -17,7 +17,7 @@ const BannerPage = () => {
                     <Carousel.Caption className='margin-bottom'>
                         <h3>MAKE A DIFFERENCE IN YOUR LIFE</h3>
                         <p>I help business owners and entrepreneurs to maximize their profits and build confidence with their finances.</p>
-                        <button style={{ color: "black", fontWeight: "700", border: "none" }}>Talk to Me</button>
+                        <button style={{ color: "black", fontWeight: "700", border: "none" }}>Make an Appointment</button>
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -31,7 +31,7 @@ const BannerPage = () => {
                         <h3>MAKE YOUR PASSION COME TRUE </h3>
                         <p> I help others just like you to learn to take control of your business and personal finances so that you can live the life you have been dreaming about. </p>
                         <button style={{ color: "black", fontWeight: "700", border: "none" }}>
-                            Talk to Me
+                            Make an Appointment
                         </button>
                     </Carousel.Caption>
                 </Carousel.Item>
