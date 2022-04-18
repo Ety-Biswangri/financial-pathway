@@ -3,7 +3,7 @@ import "./Blogs.css";
 
 const Blogs = () => {
     return (
-        <div>
+        <div style={{ minHeight: "75vh" }}>
             <h1>Blogs</h1>
         </div>
     );
