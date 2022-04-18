@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div>
-                <h6>All rights reserved &copy; {new Date().getFullYear()}</h6>
+                <h6>Financial Pathway || All rights reserved &copy; {new Date().getFullYear()}</h6>
                 <span>Visit me on social networks</span>
                 <br />
                 <span className='me-2'> <BsFacebook></BsFacebook></span>
