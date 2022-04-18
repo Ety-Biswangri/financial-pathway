@@ -18,7 +18,7 @@ const Service = ({ service }) => {
             <Col>
                 <CardGroup>
                     <Card>
-                        <Card.Img variant="top" src={img} className="image-style" />
+                        <Card.Img variant="top" src={img} className="image-style fluid" />
                         <Card.Body>
                             <Card.Title>{name}</Card.Title>
                             <Card.Text>
@@ -28,7 +28,7 @@ const Service = ({ service }) => {
                                 {description}
                             </Card.Text>
                         </Card.Body>
-                        <Button style={{ backgroundColor: "#dab6fc", color: "black", fontWeight: "600", border: "none" }} onClick={() => handleButton()}>Explore Now</Button>
+                        {<Button style={{ backgroundColor: "#dab6fc", color: "black", fontWeight: "600", border: "none" }} onClick={() => handleButton()}>Explore Now</Button>}
                     </Card>
                 </CardGroup>
             </Col>

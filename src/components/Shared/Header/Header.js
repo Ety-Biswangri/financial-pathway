@@ -10,7 +10,7 @@ const Header = () => {
     const [user, loading, error] = useAuthState(auth);
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "#e0c3fc" }}>
+            {<Navbar collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "#e0c3fc" }} className="w-100">
                 <Container>
                     <Navbar.Brand as={Link} to="/" style={{ color: "black", fontWeight: "700" }}>Financial Pathway</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/home" style={{ color: "black", fontWeight: "500" }}> Home </Nav.Link>
 
-                            <Nav.Link href="/home#services" style={{ color: "black", fontWeight: "500" }}> Services </Nav.Link>
+                            {/* <Nav.Link href="/home#services" style={{ color: "black", fontWeight: "500" }}> Services </Nav.Link>*/}
 
                             <Nav.Link as={Link} to="/blogs" style={{ color: "black", fontWeight: "500" }}>Blogs</Nav.Link>
 
@@ -34,7 +34,7 @@ const Header = () => {
 
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </Navbar>}
         </>
     );
 };

@@ -15,8 +15,15 @@
     color: white;
 }
 
-.margin-bottom Button {
+.margin-bottom button {
     background-color: #dab6fc;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.margin-bottom button:hover {
+    background-color: #d0a4f9;
 }
 
 @media screen and (max-width: 1200px) {
@@ -84,7 +91,7 @@
         font-size: 0.9rem;
     }
 
-    .margin-bottom Button {
+    .margin-bottom button {
         font-size: x-small;
     }
 
@@ -103,7 +110,7 @@
         font-size: 0.6rem;
     }
 
-    .margin-bottom Button {
+    .margin-bottom button {
         font-size: x-small;
     }
 }
@@ -121,7 +128,7 @@
         font-size: 0.6rem;
     }
 
-    .margin-bottom Button {
+    .margin-bottom button {
         font-size: 0.4rem;
     }
 }
@@ -139,7 +146,7 @@
         font-size: 0.4rem;
     }
 
-    .margin-bottom Button {
+    .margin-bottom button {
         background-color: #dab6fc;
         font-size: 0.4rem;
     }
