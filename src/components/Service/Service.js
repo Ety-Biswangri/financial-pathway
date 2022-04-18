@@ -28,7 +28,7 @@ const Service = ({ service }) => {
                                 {description}
                             </Card.Text>
                         </Card.Body>
-                        {<Button style={{ backgroundColor: "#dab6fc", color: "black", fontWeight: "600", border: "none" }} onClick={() => handleButton()}>Explore Now</Button>}
+                        {<Button style={{ backgroundColor: "#dab6fc", color: "black", fontWeight: "600", border: "none" }} onClick={() => handleButton()}>Book Now</Button>}
                     </Card>
                 </CardGroup>
             </Col>
