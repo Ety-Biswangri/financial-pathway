@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         <div style={{ minHeight: "75vh", marginBottom: "50px" }}>
             {<Container>
-                <h1 className='mt-3 text-center'>Core Concepts of Authentication</h1>
+                <h1 className='mt-3 text-center fs-1 fw-bolder' style={{ color: "#b5179e" }}>Core Concepts of Authentication</h1>
                 <div>
                     <Card className='my-4'>
                         <Card.Body>
